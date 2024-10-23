@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --main-color: #f5f5f5;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+input[type="text"],
+input[type="text"]:focus {
+  border: none;
+  /* border-color: transparent;
+  outline-color: transparent; */
+}
+
+/* style help up navbar */
+.help-container {
+  padding: 0.5rem 3rem;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: end;
+  /* gap: 20px; */
+  font-size: 0.7em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #111111aa;
+}
+
+.help-container p:not(:last-child) {
+  border-right: 1px solid #000;
+}
+.help-container p {
+  padding: 0 10px;
+}
+
+.help-container p:hover {
+  color: #111111;
+}
+
+/* style navbar*/
+.navbar {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.navbar .container-navbar {
+  display: flex;
+  padding: 1rem 3rem;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 20px; */
+}
+
+.navbar .logo {
+  font-family: "Kablammo", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "MORF" 0;
+}
+
+.navbar .container-navbar .nav-category,
+.nav-others {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.nav-others .search-bar-container {
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0.7em;
+  border-radius: 1em;
+}
+
+.search-bar-container .seach-bar {
+  margin-left: 0.7em;
+  color: #777;
+  padding-right: 3em;
+}
